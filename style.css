@@ -253,6 +253,41 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.buttonc {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.loader {
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+  0% {
+    transform: rotate(0trun);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.buttonc:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
@@ -325,21 +360,7 @@ img {
   z-index: var(--z-back);
 }
 
-.skills__html {
-  width: 95%;
-}
 
-.skills__css {
-  width: 85%;
-}
-
-.skills__js {
-  width: 65%;
-}
-
-.skills__ux {
-  width: 85%;
-}
 
 .skills__img {
   border-radius: 0.5rem;
